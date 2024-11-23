@@ -1,14 +1,12 @@
-Roadmap:
+Trinket M0 Super Mini based annoy-a-tron built into a gag gift! I have chosen to build it in a clear ornament frame, frost the viewing side, and use an opaque paint on the other side to hide the hardware.
 
-1: Create diagram for RGB LED installation in standard Christmas ornament size. Probably WS2812B strip. I do have 100x 5mm 2 pin RGB LEDs, might use those instead, will test.
-  Note: Those 5mm auto cycle, very simple, might use those
-  Also needs spot for active buzzer, Trinket M0 board, 600 mAh, Trinket LiPo backpack
-2: Code:
-  Main Loop:
-    1 week init delay
-    random whole int 1-7
-    Delay for int
-    0.5 sec high pitch buzz
+Parts:
 
-  Second loop:
-    Button press toggles light on/off, doesn't effect main loop 
+1 Trinket M0 Super Mini
+1 button
+1 passive buzzer
+X LED's. I used 5mm RGB cycling 2 post LEDs for prettiness
+X appropriate resistors for your LEDs
+1 1k Ω pull up resistor
+650 mAh LiPo with JST
+LiPo charger, I used https://www.adafruit.com/product/2124
