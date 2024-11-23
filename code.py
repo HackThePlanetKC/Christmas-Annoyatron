@@ -28,7 +28,7 @@ while True:
 
 # Delayed loop
 initial_delay = 7 * 24 * 60 * 60  # 1 week in seconds
-subsequent_delay = random.randint(1, 4) * 24 * 60 * 60  # 1-4 days in seconds
+subsequent_delay = random.randint(1, 4) * random.randint(1, 24) * random.randint(1, 60) * random.randint(1, 60)  # 1-4 days in seconds
 
 time.sleep(initial_delay)
 while True:
@@ -38,4 +38,4 @@ while True:
     pwm.duty_cycle = 0  # Turn off the buzzer
 
     time.sleep(subsequent_delay)
-    subsequent_delay = random.randint(1, 4) * 24 * 60 * 60
+    subsequent_delay = random.randint(1, 4) * random.randint(1, 24) * random.randint(1, 60) * random.randint(1, 60)
