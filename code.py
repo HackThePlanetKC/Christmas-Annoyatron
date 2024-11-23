@@ -14,6 +14,8 @@ led.direction = digitalio.Direction.OUTPUT
 
 # PWM setup for buzzer (adjust frequency and duty cycle as needed)
 pwm = pwmio.PWMOut(board.D2, frequency=12000, duty_cycle=2**15 // 2)  # 50% duty cycle
+# Stop buzzer immediately
+pwm.duty_cycle = 0  # Turn off the buzzer
 
 # Function to toggle the LED
 def toggle_led():
